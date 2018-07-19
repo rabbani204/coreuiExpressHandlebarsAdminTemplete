@@ -1,0 +1,163 @@
+@media screen and (max-width:1370px){
+	
+}/*max-width:1366px*/
+
+@media screen and (max-width:1250px){
+    .owl-carousel .owl-nav .owl-next {right: -8px;}
+    .owl-carousel .owl-nav .owl-prev {left: -25px;}
+    .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{font-size:30px;width: 0;height: 0;line-height: 0;}
+}/*max-width:1250px*/
+
+@media screen and (max-width:1200px){
+    
+}/*max-width:1200px*/
+
+
+@media screen and (max-width:1199px){
+
+	.appsLand-navbar .navbar-nav > li {padding: 0px 10px 0px;}
+
+	.download-btn {width: 185px;}
+
+	.converter-download-btn-group {margin-top: 20px;}
+
+
+	.pop-up-content {padding: 57px 50px 51px;margin-top: 100px;}
+}/*max-width:1199px*/
+
+@media screen and (max-width:1024px){
+
+}/*max-width:1024px*/
+
+
+@media screen and (max-width:992px){
+	
+}/*max-width:992px*/
+
+
+@media screen and (max-width:991px){
+
+	.appsLand-navbar .navbar-nav > li {padding: 0px 5px 0px;}
+	.appsLand-navbar .navbar-nav > li > a, .appsLand-navbar .navbar-nav > li > span {font-size: 12px;}
+	
+	.download-btn {max-width: 235px;margin: 0 auto;}
+
+}/*max-width:991px*/
+
+@media screen and (max-width:899px){
+
+   
+}/*max-width:899px*/
+
+@media screen and (max-width:768px){
+   
+   
+}/*max-width:768px*/
+
+
+@media screen and (max-width:767px){
+    .main-menu ul.nav.navbar-nav.navbar-right { display:grid;padding-left: 9px;}
+    .nav>li>a>img {height: 60px;}
+
+    .converter-select{display: none;}
+    .converter-select.converter-select-mbdev{display: -webkit-box;}
+
+    .foot-copyright-link {float: left!important;margin-top: 20px;display: block;}
+
+    .single-convert-download-card {max-width: 250px; margin: 0 auto;margin-bottom: 20px;}
+	.download-btn {max-width:140px;margin: 0 auto;}
+
+	.foot-copyright-link p {margin-left: 0;margin-bottom: 15px;}
+	.foot-social-link p i {margin-right: 15px;margin-left: 0;}
+	.single-footer-item{margin-bottom: 20px;}
+
+	.owl-carousel .owl-nav .owl-prev {left: -2%;}
+	.owl-carousel .owl-nav .owl-next {right: 0%;
+}/*max-width:767px*/
+
+
+@media screen and (max-width: 640px){
+
+    .converter-download-btn {margin-right: 10px;}
+
+    .convert-search-box input[type="text"] {padding: 0 6px;}
+
+    .convert-search-box.url-search-box input {width: 350px;}
+    .converter-dropzone-overlay h3 {line-height: 1.8}
+
+    .cbox-xtra-ml {margin-left: 10px;}
+
+}/*max-width:640px*/
+
+
+@media screen and (max-width: 580px){
+	
+	.single-convert-download-card {max-width: 210px;}
+
+
+}/*max-width:580px*/
+
+@media screen and (max-width: 540px){
+	.pop-up-content {padding: 57px 20px 51px;margin-top: 70px;}
+}/*max-width:540px*/
+
+@media screen and (max-width: 480px){
+
+	.owl-carousel .owl-nav .owl-prev {left: -3%;}
+	.owl-carousel .owl-nav .owl-next {right: 0%;}
+	.single-convert-download-card {max-width: 300px;}
+
+    .foot-copyright-link p {margin-bottom: 20px;}
+
+
+    .convert-first-para h2 {font-size: 18px;line-height: 1.6;}
+}/*max-width:480px*/
+
+@media screen and (max-width: 479px){
+
+	.owl-carousel .owl-nav .owl-prev {left: 8%;}
+	.owl-carousel .owl-nav .owl-next {right:10%;}
+
+	.convert-search {display: inline-block;}
+	.convert-search-box .form-control {margin-right: 0;margin-bottom: 30px;width: 230px;font-size: 12px;}
+	.convert-subscribe {display: flex;justify-content: center;flex-direction: column;align-items: center;}
+	.owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev{font-size:42px;}
+
+}/*max-width:479px*/
+
+@media screen and (max-width: 440px){
+
+	.desc-tabs .nav-tabs>li>a,.desc-tabs .nav-tabs>li.active>a { padding: 17px 10px 17px 10px;font-size:12px;}
+	.nav-tabs {border-bottom: 0;}
+
+	.converter-options .nav>li>a {width: 125px;margin-bottom: 20px;}
+	
+	.convert-search-box.url-search-box input {width: 220px;}
+    .convert-search-box.url-search-box input[type=text] {padding-left:2%;}
+	.dropzone h4 { margin-bottom: 20px;}
+
+	.convert-box-card { max-width: 200px;margin: 20px auto;}
+
+	.convert-subscribe p{float: left;}
+	.single-convert-download-card h3 {font-size: 12px;}
+
+
+	.owl-carousel .owl-nav .owl-prev {left: 3%;}
+	.owl-carousel .owl-nav .owl-next {right:7%;}
+
+}/*max-width:440px*/
+
+@media screen and  (max-width: 399px){
+	.single-convert-download-card {max-width: 250px;}
+	
+}/*max-width:399px*/
+
+@media screen and  (max-width: 350px){
+	.owl-carousel .owl-nav .owl-prev {left:-5.5%;}
+	.owl-carousel .owl-nav .owl-next {right:0%;}
+}/*max-width:350px*/
+
+@media screen and  (max-width: 320px){
+	
+}/*max-width:320px*/
+

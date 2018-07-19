@@ -1,0 +1,25 @@
+<div class="app flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 style="text-align: center">Create Group</h2>
+                <div class="card mx-4">
+                    <div class="card-body p-4">
+                        {{#if group.id}}
+                        <form method="post" action="/admin/group/{{group.id}}">
+                            {{else}}
+                            <form method="post" action="/admin/group">
+                                {{/if}} {{!--
+                                <form method="post" action="/admin/group"> --}}
+                                    <div class="form-group">
+                                        <label for="group">Name</label>
+                                        <input type="text" value="{{group.name}}" name="name" class="form-control" id="group" aria-describedby="emailHelp" placeholder="Enter Name">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

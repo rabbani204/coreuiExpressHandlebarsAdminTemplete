@@ -1,0 +1,89 @@
+<div class="app flex-row align-items-center">
+    <div class="container">
+        {{#if filetype.id}}
+        <form method="post" action="/admin/filetype/{{filetype.id}}">
+            {{else}}
+            <form method="post" action="/admin/filetype">
+                {{/if}}
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <h2 style="text-align: center">FileType</h2>
+                        <div class="card mx-4">
+                            <div class="card-body p-4">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="ext">Ext</label>
+                                            <input type="text" name="ext" value="{{filetype.ext}}" class="form-control" id="ext" aria-describedby="emailHelp" placeholder="Enter Extension">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="primery">Primery</label>
+                                            <input type="text" name="primery" value="{{filetype.primery}}" class="form-control" id="primery" aria-describedby="emailHelp"
+                                                placeholder="Enter Primery">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="listed">Listed</label>
+                                            <input type="text" name="listed" value="{{filetype.listed}}" class="form-control" id="listed" aria-describedby="emailHelp"
+                                                placeholder="Enter Listed">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="same_as">Same_As</label>
+                                            <input type="text" name="same_as" value="{{filetype.same_as}}" class="form-control" id="same_as" aria-describedby="emailHelp"
+                                                placeholder="Enter Same_As">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" value="{{filetype.name}}" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="type">Type</label>
+                                            <input type="text" name="type" value="{{filetype.type}}" class="form-control" id="type" aria-describedby="emailHelp" placeholder="Enter Type">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="group_id">Group</label>
+                                            <select name="group" id="group_id" class="form-control" onchange="changeSubGroup(event)">
+                                                {{# each groups}}
+                                                <option value="{{id}}" {{#ifCond filetype.group id}} selected {{/ifCond}}>{{name}}</option>
+                                                {{/each}}
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="subgroup_id">Sub Group</label>
+                                            <select name="subgroup" id="subgroup_id" class="form-control">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+    </div>
+</div>
+
+<script>
+    function changeSubGroup(ev) {
+        $.get('/admin/getsubgroups/' + ev.srcElement.value, function (data) {
+            $("#subgroup_id").html('');
+            if (data.length) {
+                $("#subgroup_id").append(`<option>Select a Subgroup</option>`);
+                data.forEach(function (e) {
+                    $("#subgroup_id").append(`<option value="${e._id}">${e.name}</option>`);
+                })
+            } else {
+                $("#subgroup_id").append("<option>No Subgroup</option>");
+            }
+        });
+    }
+</script>
